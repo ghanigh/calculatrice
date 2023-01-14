@@ -26,3 +26,14 @@ input[type="button"] {
     background-color: orange;
     color: black;
 }
+
+@media only screen and (max-width: 768px) {
+    form {
+        width: 90%;
+        height: auto;
+    }
+
+    input[type="button"] {
+        width: 30%;
+    }
+}
