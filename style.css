@@ -1,3 +1,9 @@
+body {
+    background: linear-gradient(to right, #000000, #ffffff);
+    animation: background-animation 10s linear infinite;
+  }
+    
+  
 form {
     display: flex;
     flex-wrap: wrap;
@@ -7,7 +13,7 @@ form {
     width: 400px;
     height: 400px;
     background-color: black;
-    color: orange;
+    color: white;
 }
 
 input[type="text"] {
@@ -23,7 +29,7 @@ input[type="button"] {
     width: 25%;
     height: 50px;
     font-size: 20px;
-    background-color: orange;
+    background-color: white;
     color: black;
 }
 
@@ -37,3 +43,28 @@ input[type="button"] {
         width: 30%;
     }
 }
+
+@media screen and (max-width: 600px) {
+    /* Styles pour les écrans de moins de 600 pixels de largeur */
+    input[type="button"] {
+      padding: 5px;
+      font-size: 14px;
+    }
+  }
+  
+
+/* Styles de base pour les boutons de la calculatrice */
+input[type="button"] {
+    background-color: #eee;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Styles pour les boutons cliqués */
+  input[type="button"]:active {
+    background-color: #ccc;
+    transform: scale(0.9);
+  }
+  
